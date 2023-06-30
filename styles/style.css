@@ -1,0 +1,134 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 75% 1fr;
+    background-color: #2db966;
+}
+header{
+    grid-column: 2/3;
+    display: grid;
+    background-color: #d9f4ff;
+}
+main{
+    grid-column: 2/3;
+    display: grid;
+    background-color: #d9f4ff;
+}
+.kale{
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+}
+
+.title{
+    grid-column: 2/3;
+    grid-row: 1;
+    text-align: left;
+    margin-left: -10%;
+    
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: #2db966;
+    color: #d9f4ff;
+    width: 20%;
+    text-align: center;
+    font-size: larger;
+}
+nav{
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-color: #d9f4ff;
+    width: 100%;
+    color: black;
+    
+}
+nav a:hover{
+    background-color: #0e88fa;
+}
+footer{
+    grid-column: 2/3;
+    background-color: #d9f4ff; 
+}
+.logo{
+    margin: 10px;
+}
+footer nav a{
+    padding: 5px;
+    margin: 5px;
+}
+p{
+    margin: 5px;
+    padding: 15px;
+    font-size: larger;
+}
+h1{
+    font-size: xx-large;
+    color: #2db966;
+} 
+table{
+    margin: 15px;
+}
+table tr td{
+    border: 1px solid black;
+    text-align: center;
+} 
+.cropcellspring{
+    background-color: #FF8EE1;
+}
+.cropcellsummer{
+    background-color: #FFFF17;
+}
+.cropcellfall{
+    background-color: #FF820C;
+}
+.falltable tr td{
+    background-color: #FF820C;
+}
+.summertable tr td{
+    background-color: #FFFF17;
+}
+.springtable tr td{
+    background-color: #FF8EE1;
+}
+.springlink{
+    background-color: #FF8EE1;
+    color: black;
+}
+.summerlink{
+    background-color: #FFFF17;
+    color: black;
+}
+.falllink{
+    background-color: #FF820C;
+    color: black;
+}
+.links{
+    color: black;
+}
+@media screen and (max-width: 900px) {
+    
+    nav, footer {
+        flex-direction: column;
+        
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    img{
+        width: 100%;
+    }
+    .title{
+        font-size: xx-large;
+        margin: 5px;
+    }
+    .logo{
+        width: 50px;
+    }
+    
+}

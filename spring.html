@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stardew Valley Crop Profit - Spring</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
+<body class="spring">
     <header>
         <img src="./images/potato.jpg" alt="logo" class="logo">
         <h1 class="title">Stardew Valley Crop Profit - Spring</h1>
-        <nav>
+        <nav class="links">
             <a href="site-plan.html">Site Plan</a>
             <a href="index.html">Home</a>
-            <a href="spring.html">Spring</a>
-            <a href="summer.html">Summer</a>
-            <a href="fall.html">Fall</a>
+            <a class="springlink" href="spring.html">Spring</a>
+            <a class="summerlink" href="summer.html">Summer</a>
+            <a class="falllink" href="fall.html">Fall</a>
         </nav>
     </header>
     <main>
@@ -24,7 +25,151 @@
             plan ahead for the first season, or perhaps you're in your second year, looking to maximise profit. (The answer is strawberries folks.)
             Here's the information for all the spring crops, with a summary below:
         </p>
-        <img src="./images/springcrops.PNG" alt="spring crops table" class="springtable">
+        <table class="springtable">
+            <tr>
+              <th>Crop</th>
+              <th>Seed Price</th>
+              <th>Sell Price</th>
+              <th>Growth Time(days)</th>
+              <th>Experience</th>
+              <th>Regrowable?</th>
+              <th>Crops at harvest</th>
+              <th>g/day</th>
+              <th>exp/day</th>
+            </tr>
+            <tr>
+              <td class="cropcellspring">Blue Jazz</td>
+              <td>30</td>
+              <td>50</td>
+              <td>7</td>
+              <td>10</td>
+              <td>1</td>
+              <td>1</td>
+              <td>2.86</td>
+              <td>1.43</td>
+            </tr>
+            <tr>
+              <td class="cropcellspring">Cauliflower</td>
+              <td>80</td>
+              <td>175</td>
+              <td>12</td>
+              <td>23</td>
+              <td>1</td>
+              <td>1</td>
+              <td>7.92</td>
+              <td>1.92</td>
+            </tr>
+            <tr>
+                <td class="cropcellspring">Coffee Bean</td>
+                <td>15</td>
+                <td>15</td>
+                <td>28</td>
+                <td>4</td>
+                <td>9</td>
+                <td>4.02</td>
+                <td>18.85</td>
+                <td>1.29</td>
+            </tr>
+            <tr>
+                <td class="cropcellspring">Garlic</td>
+                <td>40</td>
+                <td>60</td>
+                <td>4</td>
+                <td>12</td>
+                <td>1</td>
+                <td>1</td>
+                <td>5</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td class="cropcellspring">Green Bean</td>
+                <td>60</td>
+                <td>40</td>
+                <td>28</td>
+                <td>9</td>
+                <td>6</td>
+                <td>1</td>
+                <td>6.43</td>
+                <td>1.93</td>
+            </tr>
+            <tr>
+                <td class="cropcellspring">Kale</td>
+                <td>70</td>
+                <td>110</td>
+                <td>6</td>
+                <td>17</td>
+                <td>1</td>
+                <td>1</td>
+                <td>6.67</td>
+                <td>2.83</td>
+            </tr>
+            <tr>
+                <td class="cropcellspring">Parsnip</td>
+                <td>20</td>
+                <td>35</td>
+                <td>4</td>
+                <td>8</td>
+                <td>1</td>
+                <td>1</td>
+                <td>3.75</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td class="cropcellspring">Potato</td>
+                <td>50</td>
+                <td>80</td>
+                <td>6</td>
+                <td>14</td>
+                <td>1</td>
+                <td>1.25</td>
+                <td>8.33</td>
+                <td>2.33</td>
+            </tr>
+            <tr>
+                <td class="cropcellspring">Rhubarb</td>
+                <td>100</td>
+                <td>220</td>
+                <td>13</td>
+                <td>26</td>
+                <td>1</td>
+                <td>1</td>
+                <td>9.23</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td class="cropcellspring">Strawberry</td>
+                <td>100</td>
+                <td>120</td>
+                <td>28</td>
+                <td>18</td>
+                <td>5</td>
+                <td>1.02</td>
+                <td>18.29</td>
+                <td>3.21</td>
+            </tr>
+            <tr>
+                <td class="cropcellspring">Tulip</td>
+                <td>20</td>
+                <td>30</td>
+                <td>6</td>
+                <td>7</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1.67</td>
+                <td>1.17</td>
+            </tr>
+            <tr>
+                <td class="cropcellspring">Rice</td>
+                <td>40</td>
+                <td>30</td>
+                <td>6</td>
+                <td>7</td>
+                <td>1</td>
+                <td>1</td>
+                <td>-1.67</td>
+                <td>1.17</td>
+            </tr>
+          </table>
         <p>
             Quick summary: Strawberries are by far the best in all categories, unless you want to make wine, for which rhubarb has a slightly higher sell
             price. Obviously, both of those are hard to get your hands on year 1, so you might want to start with potatoes for money and kale 
@@ -34,7 +179,7 @@
     </main>
     <footer>
         <p> &copy; Mark Whitman - 2023</p>
-        <nav><a href="site-plan.html">Site Plan</a></nav>
+        <nav class="links"><a href="site-plan.html">Site Plan</a></nav>
     </footer>
 </body>
 </html>
