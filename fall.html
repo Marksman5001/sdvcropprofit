@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stardew Valley Crop Profit - Fall</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body class="fall">
     <header>
         <img src="./images/potato.jpg" alt="logo" class="logo">
         <h1 class="title">Stardew Valley Crop Profit - Fall</h1>
-        <nav class="links">
-            <a href="site-plan.html">Site Plan</a>
+        <nav class="links" id="mylinks">
+            <a href="javascript:void(0);" class="icon" onclick="myfunction()">
+                <i class="fa fa-bars"></i>
+            </a>
             <a href="index.html">Home</a>
             <a class="springlink" href="spring.html">Spring</a>
             <a class="summerlink" href="summer.html">Summer</a>
@@ -25,6 +29,7 @@
             flower available, so if beehives are your thing, go crazy! This is my personal favorite season in Stardew, it looks so great it makes
             it easy for me to decorate, since I don't do very well on my own! Lots of good looking crops to pick from here!
         </p>
+        <div style="overflow-x: auto;">
         <table class="falltable">
             <tr>
               <th>Crop</th>
@@ -159,6 +164,7 @@
                 <td>3</td>
             </tr>
           </table>
+        </div>
         <p>
             While, obviously, Sweet Gem Berries are the best, they aren't consistant, and, once again, I was surprized to see Cranberries
             on top. Pumpkins aren't far behind though, and they can grow into giant variants, which can be a nice surprise or a
@@ -170,4 +176,15 @@
         <p> &copy; Mark Whitman - 2023</p>
         <nav class="links"><a href="site-plan.html">Site Plan</a></nav>
     </footer>
+    <script>
+        function myfunction() {
+            var x = document.getElementById("mylinks");
+            if (x.className === "links") {
+                x.className += " responsive";
+            } else {
+                x.className = "links";
+            }
+            }
+    </script>
 </body>
+</html>
